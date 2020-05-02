@@ -3,27 +3,119 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A801F7A2DE32A11FF538F5AD /* Pods_ZapakService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45D456BC0CE707492D118E2 /* Pods_ZapakService.framework */; };
 		BF16B8FE245DC38D00B9062D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B8FD245DC38D00B9062D /* AppDelegate.swift */; };
-		BF16B900245DC38D00B9062D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B8FF245DC38D00B9062D /* SceneDelegate.swift */; };
-		BF16B902245DC38D00B9062D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B901245DC38D00B9062D /* ViewController.swift */; };
+		BF16B902245DC38D00B9062D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B901245DC38D00B9062D /* LoginViewController.swift */; };
 		BF16B905245DC38D00B9062D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF16B903245DC38D00B9062D /* Main.storyboard */; };
 		BF16B907245DC39200B9062D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF16B906245DC39200B9062D /* Assets.xcassets */; };
 		BF16B90A245DC39200B9062D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF16B908245DC39200B9062D /* LaunchScreen.storyboard */; };
+		BF16B93D245DC94900B9062D /* ComplaintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B913245DC94800B9062D /* ComplaintViewController.swift */; };
+		BF16B93E245DC94900B9062D /* ComplaintHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B914245DC94800B9062D /* ComplaintHomeViewController.swift */; };
+		BF16B93F245DC94900B9062D /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B915245DC94800B9062D /* AddressViewController.swift */; };
+		BF16B940245DC94900B9062D /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B917245DC94800B9062D /* HomeCollectionViewCell.swift */; };
+		BF16B941245DC94900B9062D /* HomeServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B918245DC94800B9062D /* HomeServiceController.swift */; };
+		BF16B942245DC94900B9062D /* AcRepairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B91A245DC94800B9062D /* AcRepairViewController.swift */; };
+		BF16B943245DC94900B9062D /* WashMServiceVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B91C245DC94800B9062D /* WashMServiceVController.swift */; };
+		BF16B944245DC94900B9062D /* WashMRepairVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B91D245DC94800B9062D /* WashMRepairVController.swift */; };
+		BF16B945245DC94900B9062D /* WashingMachineServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B91E245DC94800B9062D /* WashingMachineServiceController.swift */; };
+		BF16B946245DC94900B9062D /* GyserService&RepairVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B920245DC94800B9062D /* GyserService&RepairVController.swift */; };
+		BF16B947245DC94900B9062D /* GyserServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B921245DC94800B9062D /* GyserServiceController.swift */; };
+		BF16B948245DC94900B9062D /* GyserInstallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B922245DC94800B9062D /* GyserInstallViewController.swift */; };
+		BF16B949245DC94900B9062D /* GyserRepairController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B923245DC94800B9062D /* GyserRepairController.swift */; };
+		BF16B94A245DC94900B9062D /* RefrigatorRepairController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B925245DC94800B9062D /* RefrigatorRepairController.swift */; };
+		BF16B94B245DC94900B9062D /* CardDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B927245DC94800B9062D /* CardDetailsController.swift */; };
+		BF16B94C245DC94900B9062D /* CaedDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B928245DC94800B9062D /* CaedDetailTableViewCell.swift */; };
+		BF16B94D245DC94900B9062D /* AddMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B92A245DC94800B9062D /* AddMoneyViewController.swift */; };
+		BF16B94E245DC94900B9062D /* BookingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B92B245DC94800B9062D /* BookingDetailViewController.swift */; };
+		BF16B94F245DC94900B9062D /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B92C245DC94800B9062D /* UpdateProfileViewController.swift */; };
+		BF16B950245DC94900B9062D /* BookingHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B92D245DC94800B9062D /* BookingHistoryViewController.swift */; };
+		BF16B951245DC94900B9062D /* WalletHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B92E245DC94800B9062D /* WalletHistoryViewController.swift */; };
+		BF16B952245DC94900B9062D /* WalletHisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B92F245DC94800B9062D /* WalletHisTableViewCell.swift */; };
+		BF16B953245DC94900B9062D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B930245DC94800B9062D /* ProfileViewController.swift */; };
+		BF16B954245DC94900B9062D /* BokinhistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B931245DC94800B9062D /* BokinhistTableViewCell.swift */; };
+		BF16B955245DC94900B9062D /* RoServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B933245DC94800B9062D /* RoServiceViewController.swift */; };
+		BF16B956245DC94900B9062D /* tabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B934245DC94900B9062D /* tabbarViewController.swift */; };
+		BF16B957245DC94900B9062D /* AboutServicesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B936245DC94900B9062D /* AboutServicesController.swift */; };
+		BF16B958245DC94900B9062D /* TermConditionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B937245DC94900B9062D /* TermConditionsController.swift */; };
+		BF16B959245DC94900B9062D /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B938245DC94900B9062D /* AboutUsViewController.swift */; };
+		BF16B95A245DC94900B9062D /* PrivacyPolicyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B939245DC94900B9062D /* PrivacyPolicyController.swift */; };
+		BF16B95B245DC94900B9062D /* CCtvRepaServController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B93B245DC94900B9062D /* CCtvRepaServController.swift */; };
+		BF16B977245DCB6200B9062D /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B968245DCB6100B9062D /* UserDetails.swift */; };
+		BF16B978245DCB6200B9062D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B969245DCB6100B9062D /* NetworkManager.swift */; };
+		BF16B979245DCB6200B9062D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B96A245DCB6100B9062D /* Network.swift */; };
+		BF16B97A245DCB6200B9062D /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B96B245DCB6100B9062D /* Loader.swift */; };
+		BF16B97B245DCB6200B9062D /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B96C245DCB6100B9062D /* Server.swift */; };
+		BF16B97C245DCB6200B9062D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B96E245DCB6100B9062D /* Model.swift */; };
+		BF16B97D245DCB6200B9062D /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B970245DCB6200B9062D /* Validation.swift */; };
+		BF16B97E245DCB6200B9062D /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B972245DCB6200B9062D /* UIView+Extensions.swift */; };
+		BF16B97F245DCB6200B9062D /* AppExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B973245DCB6200B9062D /* AppExtension.swift */; };
+		BF16B980245DCB6200B9062D /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B974245DCB6200B9062D /* UITableView+Ext.swift */; };
+		BF16B981245DCB6200B9062D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B975245DCB6200B9062D /* UIViewExtension.swift */; };
+		BF16B982245DCB6200B9062D /* DPOTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B976245DCB6200B9062D /* DPOTPView.swift */; };
+		BF16B984245DCB7200B9062D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B983245DCB7200B9062D /* BaseViewController.swift */; };
+		BF16B986245DD34500B9062D /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B985245DD34500B9062D /* OTPViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00DDAB41508D69E7588E97B2 /* Pods-ZapakService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZapakService.debug.xcconfig"; path = "Target Support Files/Pods-ZapakService/Pods-ZapakService.debug.xcconfig"; sourceTree = "<group>"; };
+		A45D456BC0CE707492D118E2 /* Pods_ZapakService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZapakService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF16B8FA245DC38D00B9062D /* ZapakService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZapakService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF16B8FD245DC38D00B9062D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF16B8FF245DC38D00B9062D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF16B901245DC38D00B9062D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF16B901245DC38D00B9062D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BF16B904245DC38D00B9062D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF16B906245DC39200B9062D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF16B909245DC39200B9062D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF16B90B245DC39200B9062D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF16B913245DC94800B9062D /* ComplaintViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplaintViewController.swift; sourceTree = "<group>"; };
+		BF16B914245DC94800B9062D /* ComplaintHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplaintHomeViewController.swift; sourceTree = "<group>"; };
+		BF16B915245DC94800B9062D /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
+		BF16B917245DC94800B9062D /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		BF16B918245DC94800B9062D /* HomeServiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeServiceController.swift; sourceTree = "<group>"; };
+		BF16B91A245DC94800B9062D /* AcRepairViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcRepairViewController.swift; sourceTree = "<group>"; };
+		BF16B91C245DC94800B9062D /* WashMServiceVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WashMServiceVController.swift; sourceTree = "<group>"; };
+		BF16B91D245DC94800B9062D /* WashMRepairVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WashMRepairVController.swift; sourceTree = "<group>"; };
+		BF16B91E245DC94800B9062D /* WashingMachineServiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WashingMachineServiceController.swift; sourceTree = "<group>"; };
+		BF16B920245DC94800B9062D /* GyserService&RepairVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GyserService&RepairVController.swift"; sourceTree = "<group>"; };
+		BF16B921245DC94800B9062D /* GyserServiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GyserServiceController.swift; sourceTree = "<group>"; };
+		BF16B922245DC94800B9062D /* GyserInstallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GyserInstallViewController.swift; sourceTree = "<group>"; };
+		BF16B923245DC94800B9062D /* GyserRepairController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GyserRepairController.swift; sourceTree = "<group>"; };
+		BF16B925245DC94800B9062D /* RefrigatorRepairController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefrigatorRepairController.swift; sourceTree = "<group>"; };
+		BF16B927245DC94800B9062D /* CardDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailsController.swift; sourceTree = "<group>"; };
+		BF16B928245DC94800B9062D /* CaedDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaedDetailTableViewCell.swift; sourceTree = "<group>"; };
+		BF16B92A245DC94800B9062D /* AddMoneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMoneyViewController.swift; sourceTree = "<group>"; };
+		BF16B92B245DC94800B9062D /* BookingDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingDetailViewController.swift; sourceTree = "<group>"; };
+		BF16B92C245DC94800B9062D /* UpdateProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewController.swift; sourceTree = "<group>"; };
+		BF16B92D245DC94800B9062D /* BookingHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingHistoryViewController.swift; sourceTree = "<group>"; };
+		BF16B92E245DC94800B9062D /* WalletHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletHistoryViewController.swift; sourceTree = "<group>"; };
+		BF16B92F245DC94800B9062D /* WalletHisTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletHisTableViewCell.swift; sourceTree = "<group>"; };
+		BF16B930245DC94800B9062D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BF16B931245DC94800B9062D /* BokinhistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BokinhistTableViewCell.swift; sourceTree = "<group>"; };
+		BF16B933245DC94800B9062D /* RoServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoServiceViewController.swift; sourceTree = "<group>"; };
+		BF16B934245DC94900B9062D /* tabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabbarViewController.swift; sourceTree = "<group>"; };
+		BF16B936245DC94900B9062D /* AboutServicesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutServicesController.swift; sourceTree = "<group>"; };
+		BF16B937245DC94900B9062D /* TermConditionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermConditionsController.swift; sourceTree = "<group>"; };
+		BF16B938245DC94900B9062D /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		BF16B939245DC94900B9062D /* PrivacyPolicyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyController.swift; sourceTree = "<group>"; };
+		BF16B93B245DC94900B9062D /* CCtvRepaServController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCtvRepaServController.swift; sourceTree = "<group>"; };
+		BF16B968245DCB6100B9062D /* UserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
+		BF16B969245DCB6100B9062D /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BF16B96A245DCB6100B9062D /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		BF16B96B245DCB6100B9062D /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		BF16B96C245DCB6100B9062D /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		BF16B96E245DCB6100B9062D /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		BF16B970245DCB6200B9062D /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		BF16B972245DCB6200B9062D /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		BF16B973245DCB6200B9062D /* AppExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppExtension.swift; sourceTree = "<group>"; };
+		BF16B974245DCB6200B9062D /* UITableView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		BF16B975245DCB6200B9062D /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		BF16B976245DCB6200B9062D /* DPOTPView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPOTPView.swift; sourceTree = "<group>"; };
+		BF16B983245DCB7200B9062D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BF16B985245DD34500B9062D /* OTPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		E8F95C2846E5F5AA475352D7 /* Pods-ZapakService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZapakService.release.xcconfig"; path = "Target Support Files/Pods-ZapakService/Pods-ZapakService.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +123,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A801F7A2DE32A11FF538F5AD /* Pods_ZapakService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41822C06A81B1496919BE2BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00DDAB41508D69E7588E97B2 /* Pods-ZapakService.debug.xcconfig */,
+				E8F95C2846E5F5AA475352D7 /* Pods-ZapakService.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BE37D9C2DD9F2F528D385B22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A45D456BC0CE707492D118E2 /* Pods_ZapakService.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BF16B8F1245DC38D00B9062D = {
 			isa = PBXGroup;
 			children = (
 				BF16B8FC245DC38D00B9062D /* ZapakService */,
 				BF16B8FB245DC38D00B9062D /* Products */,
+				41822C06A81B1496919BE2BE /* Pods */,
+				BE37D9C2DD9F2F528D385B22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +168,187 @@
 		BF16B8FC245DC38D00B9062D /* ZapakService */ = {
 			isa = PBXGroup;
 			children = (
+				BF16B983245DCB7200B9062D /* BaseViewController.swift */,
+				BF16B971245DCB6200B9062D /* Extension */,
+				BF16B96D245DCB6100B9062D /* Model */,
+				BF16B967245DCB6100B9062D /* Network */,
+				BF16B96F245DCB6200B9062D /* Utils */,
+				BF16B911245DC62100B9062D /* Screens */,
 				BF16B8FD245DC38D00B9062D /* AppDelegate.swift */,
-				BF16B8FF245DC38D00B9062D /* SceneDelegate.swift */,
-				BF16B901245DC38D00B9062D /* ViewController.swift */,
+				BF16B901245DC38D00B9062D /* LoginViewController.swift */,
 				BF16B903245DC38D00B9062D /* Main.storyboard */,
 				BF16B906245DC39200B9062D /* Assets.xcassets */,
 				BF16B908245DC39200B9062D /* LaunchScreen.storyboard */,
 				BF16B90B245DC39200B9062D /* Info.plist */,
 			);
 			path = ZapakService;
+			sourceTree = "<group>";
+		};
+		BF16B911245DC62100B9062D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BF16B985245DD34500B9062D /* OTPViewController.swift */,
+				BF16B935245DC94900B9062D /* About */,
+				BF16B915245DC94800B9062D /* AddressViewController.swift */,
+				BF16B926245DC94800B9062D /* CardDetail */,
+				BF16B93A245DC94900B9062D /* CCtv */,
+				BF16B912245DC94800B9062D /* Complaint */,
+				BF16B91F245DC94800B9062D /* Gyser */,
+				BF16B916245DC94800B9062D /* home */,
+				BF16B929245DC94800B9062D /* Profile */,
+				BF16B924245DC94800B9062D /* Refrigator */,
+				BF16B932245DC94800B9062D /* RoService */,
+				BF16B934245DC94900B9062D /* tabbarViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BF16B912245DC94800B9062D /* Complaint */ = {
+			isa = PBXGroup;
+			children = (
+				BF16B913245DC94800B9062D /* ComplaintViewController.swift */,
+				BF16B914245DC94800B9062D /* ComplaintHomeViewController.swift */,
+			);
+			path = Complaint;
+			sourceTree = "<group>";
+		};
+		BF16B916245DC94800B9062D /* home */ = {
+			isa = PBXGroup;
+			children = (
+				BF16B917245DC94800B9062D /* HomeCollectionViewCell.swift */,
+				BF16B918245DC94800B9062D /* HomeServiceController.swift */,
+				BF16B919245DC94800B9062D /* Ac */,
+				BF16B91B245DC94800B9062D /* WashingMachine */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		BF16B919245DC94800B9062D /* Ac */ = {
+			isa = PBXGroup;
+			children = (
+				BF16B91A245DC94800B9062D /* AcRepairViewController.swift */,
+			);
+			path = Ac;
+			sourceTree = "<group>";
+		};
+		BF16B91B245DC94800B9062D /* WashingMachine */ = {
+			isa = PBXGroup;
+			children = (
+				BF16B91C245DC94800B9062D /* WashMServiceVController.swift */,
+				BF16B91D245DC94800B9062D /* WashMRepairVController.swift */,
+				BF16B91E245DC94800B9062D /* WashingMachineServiceController.swift */,
+			);
+			path = WashingMachine;
+			sourceTree = "<group>";
+		};
+		BF16B91F245DC94800B9062D /* Gyser */ = {
+			isa = PBXGroup;
+			children = (
+				BF16B920245DC94800B9062D /* GyserService&RepairVController.swift */,
+				BF16B921245DC94800B9062D /* GyserServiceController.swift */,
+				BF16B922245DC94800B9062D /* GyserInstallViewController.swift */,
+				BF16B923245DC94800B9062D /* GyserRepairController.swift */,
+			);
+			path = Gyser;
+			sourceTree = "<group>";
+		};
+		BF16B924245DC94800B9062D /* Refrigator */ = {
+			isa = PBXGroup;
+			children = (
+				BF16B925245DC94800B9062D /* RefrigatorRepairController.swift */,
+			);
+			path = Refrigator;
+			sourceTree = "<group>";
+		};
+		BF16B926245DC94800B9062D /* CardDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BF16B927245DC94800B9062D /* CardDetailsController.swift */,
+				BF16B928245DC94800B9062D /* CaedDetailTableViewCell.swift */,
+			);
+			path = CardDetail;
+			sourceTree = "<group>";
+		};
+		BF16B929245DC94800B9062D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BF16B92A245DC94800B9062D /* AddMoneyViewController.swift */,
+				BF16B92B245DC94800B9062D /* BookingDetailViewController.swift */,
+				BF16B92C245DC94800B9062D /* UpdateProfileViewController.swift */,
+				BF16B92D245DC94800B9062D /* BookingHistoryViewController.swift */,
+				BF16B92E245DC94800B9062D /* WalletHistoryViewController.swift */,
+				BF16B92F245DC94800B9062D /* WalletHisTableViewCell.swift */,
+				BF16B930245DC94800B9062D /* ProfileViewController.swift */,
+				BF16B931245DC94800B9062D /* BokinhistTableViewCell.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		BF16B932245DC94800B9062D /* RoService */ = {
+			isa = PBXGroup;
+			children = (
+				BF16B933245DC94800B9062D /* RoServiceViewController.swift */,
+			);
+			path = RoService;
+			sourceTree = "<group>";
+		};
+		BF16B935245DC94900B9062D /* About */ = {
+			isa = PBXGroup;
+			children = (
+				BF16B936245DC94900B9062D /* AboutServicesController.swift */,
+				BF16B937245DC94900B9062D /* TermConditionsController.swift */,
+				BF16B938245DC94900B9062D /* AboutUsViewController.swift */,
+				BF16B939245DC94900B9062D /* PrivacyPolicyController.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		BF16B93A245DC94900B9062D /* CCtv */ = {
+			isa = PBXGroup;
+			children = (
+				BF16B93B245DC94900B9062D /* CCtvRepaServController.swift */,
+			);
+			path = CCtv;
+			sourceTree = "<group>";
+		};
+		BF16B967245DCB6100B9062D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BF16B968245DCB6100B9062D /* UserDetails.swift */,
+				BF16B969245DCB6100B9062D /* NetworkManager.swift */,
+				BF16B96A245DCB6100B9062D /* Network.swift */,
+				BF16B96B245DCB6100B9062D /* Loader.swift */,
+				BF16B96C245DCB6100B9062D /* Server.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BF16B96D245DCB6100B9062D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF16B96E245DCB6100B9062D /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF16B96F245DCB6200B9062D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BF16B970245DCB6200B9062D /* Validation.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BF16B971245DCB6200B9062D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BF16B972245DCB6200B9062D /* UIView+Extensions.swift */,
+				BF16B973245DCB6200B9062D /* AppExtension.swift */,
+				BF16B974245DCB6200B9062D /* UITableView+Ext.swift */,
+				BF16B975245DCB6200B9062D /* UIViewExtension.swift */,
+				BF16B976245DCB6200B9062D /* DPOTPView.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +358,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF16B90E245DC39200B9062D /* Build configuration list for PBXNativeTarget "ZapakService" */;
 			buildPhases = (
+				C0FA476B95CD0FD659A4CAE1 /* [CP] Check Pods Manifest.lock */,
 				BF16B8F6245DC38D00B9062D /* Sources */,
 				BF16B8F7245DC38D00B9062D /* Frameworks */,
 				BF16B8F8245DC38D00B9062D /* Resources */,
+				5D73FFCEDFAC2F2FF27EC404 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +419,100 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5D73FFCEDFAC2F2FF27EC404 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZapakService/Pods-ZapakService-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZapakService/Pods-ZapakService-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZapakService/Pods-ZapakService-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0FA476B95CD0FD659A4CAE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZapakService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF16B8F6245DC38D00B9062D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF16B902245DC38D00B9062D /* ViewController.swift in Sources */,
+				BF16B97E245DCB6200B9062D /* UIView+Extensions.swift in Sources */,
+				BF16B979245DCB6200B9062D /* Network.swift in Sources */,
+				BF16B978245DCB6200B9062D /* NetworkManager.swift in Sources */,
+				BF16B948245DC94900B9062D /* GyserInstallViewController.swift in Sources */,
+				BF16B94E245DC94900B9062D /* BookingDetailViewController.swift in Sources */,
+				BF16B951245DC94900B9062D /* WalletHistoryViewController.swift in Sources */,
+				BF16B94C245DC94900B9062D /* CaedDetailTableViewCell.swift in Sources */,
+				BF16B977245DCB6200B9062D /* UserDetails.swift in Sources */,
+				BF16B941245DC94900B9062D /* HomeServiceController.swift in Sources */,
+				BF16B902245DC38D00B9062D /* LoginViewController.swift in Sources */,
+				BF16B950245DC94900B9062D /* BookingHistoryViewController.swift in Sources */,
+				BF16B954245DC94900B9062D /* BokinhistTableViewCell.swift in Sources */,
+				BF16B984245DCB7200B9062D /* BaseViewController.swift in Sources */,
+				BF16B947245DC94900B9062D /* GyserServiceController.swift in Sources */,
+				BF16B944245DC94900B9062D /* WashMRepairVController.swift in Sources */,
+				BF16B95A245DC94900B9062D /* PrivacyPolicyController.swift in Sources */,
+				BF16B981245DCB6200B9062D /* UIViewExtension.swift in Sources */,
+				BF16B95B245DC94900B9062D /* CCtvRepaServController.swift in Sources */,
+				BF16B97C245DCB6200B9062D /* Model.swift in Sources */,
+				BF16B945245DC94900B9062D /* WashingMachineServiceController.swift in Sources */,
+				BF16B958245DC94900B9062D /* TermConditionsController.swift in Sources */,
+				BF16B94D245DC94900B9062D /* AddMoneyViewController.swift in Sources */,
+				BF16B93E245DC94900B9062D /* ComplaintHomeViewController.swift in Sources */,
+				BF16B93D245DC94900B9062D /* ComplaintViewController.swift in Sources */,
+				BF16B93F245DC94900B9062D /* AddressViewController.swift in Sources */,
+				BF16B942245DC94900B9062D /* AcRepairViewController.swift in Sources */,
+				BF16B982245DCB6200B9062D /* DPOTPView.swift in Sources */,
+				BF16B97D245DCB6200B9062D /* Validation.swift in Sources */,
 				BF16B8FE245DC38D00B9062D /* AppDelegate.swift in Sources */,
-				BF16B900245DC38D00B9062D /* SceneDelegate.swift in Sources */,
+				BF16B957245DC94900B9062D /* AboutServicesController.swift in Sources */,
+				BF16B946245DC94900B9062D /* GyserService&RepairVController.swift in Sources */,
+				BF16B986245DD34500B9062D /* OTPViewController.swift in Sources */,
+				BF16B97A245DCB6200B9062D /* Loader.swift in Sources */,
+				BF16B959245DC94900B9062D /* AboutUsViewController.swift in Sources */,
+				BF16B943245DC94900B9062D /* WashMServiceVController.swift in Sources */,
+				BF16B940245DC94900B9062D /* HomeCollectionViewCell.swift in Sources */,
+				BF16B980245DCB6200B9062D /* UITableView+Ext.swift in Sources */,
+				BF16B956245DC94900B9062D /* tabbarViewController.swift in Sources */,
+				BF16B94A245DC94900B9062D /* RefrigatorRepairController.swift in Sources */,
+				BF16B94F245DC94900B9062D /* UpdateProfileViewController.swift in Sources */,
+				BF16B97F245DCB6200B9062D /* AppExtension.swift in Sources */,
+				BF16B955245DC94900B9062D /* RoServiceViewController.swift in Sources */,
+				BF16B949245DC94900B9062D /* GyserRepairController.swift in Sources */,
+				BF16B953245DC94900B9062D /* ProfileViewController.swift in Sources */,
+				BF16B94B245DC94900B9062D /* CardDetailsController.swift in Sources */,
+				BF16B97B245DCB6200B9062D /* Server.swift in Sources */,
+				BF16B952245DC94900B9062D /* WalletHisTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +654,7 @@
 		};
 		BF16B90F245DC39200B9062D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00DDAB41508D69E7588E97B2 /* Pods-ZapakService.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +672,7 @@
 		};
 		BF16B910245DC39200B9062D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8F95C2846E5F5AA475352D7 /* Pods-ZapakService.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

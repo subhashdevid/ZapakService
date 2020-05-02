@@ -1,0 +1,6 @@
+framework module Pods_ZapakService {
+  umbrella header "Pods-ZapakService-umbrella.h"
+
+  export *
+  module * { export * }
+}
