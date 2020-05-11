@@ -145,14 +145,31 @@ class HomeServiceController: UIViewController {
    
 }
 extension HomeServiceController : UICollectionViewDelegate,UICollectionViewDataSource{
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return images.count
+        if section == 0{
+             return images.count
+        }else{
+            return 6
+        }
+       
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = myCollections.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HomeCollectionViewCell
-        cell.img1.image = UIImage(named: images[indexPath.row])
-        return cell
+        
+        if indexPath.section == 0{
+            let cell = myCollections.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HomeCollectionViewCell
+                   cell.img1.image = UIImage(named: images[indexPath.row])
+                   return cell
+        }else{
+            
+            let cell = myCollections.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HomeCollectionViewCell
+                   cell.img1.image = UIImage(named: images[indexPath.row])
+                   return cell
+        }
+       
     }
     
     
