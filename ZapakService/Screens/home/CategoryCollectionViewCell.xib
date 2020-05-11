@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionViewCell" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="ZapakService" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="177" height="241"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="177" height="241"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jd-gq-DpL">
+                        <rect key="frame" x="5" y="5" width="167" height="231"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dht-mm-Nxa">
+                                <rect key="frame" x="6" y="5" width="154" height="176"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="von-4j-fn3">
+                                        <rect key="frame" x="5" y="5" width="144" height="166"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="von-4j-fn3" firstAttribute="leading" secondItem="dht-mm-Nxa" secondAttribute="leading" constant="5" id="00G-Lm-HBG"/>
+                                    <constraint firstAttribute="bottom" secondItem="von-4j-fn3" secondAttribute="bottom" constant="5" id="56A-Oz-UGT"/>
+                                    <constraint firstAttribute="height" constant="176" id="FOn-OD-sof"/>
+                                    <constraint firstItem="von-4j-fn3" firstAttribute="top" secondItem="dht-mm-Nxa" secondAttribute="top" constant="5" id="LwD-XZ-wMm"/>
+                                    <constraint firstAttribute="trailing" secondItem="von-4j-fn3" secondAttribute="trailing" constant="5" id="j74-wx-DWb"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDO-ym-Dtg">
+                                <rect key="frame" x="5" y="186" width="157" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4zl-Jt-OKx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pDO-ym-Dtg" firstAttribute="leading" secondItem="4jd-gq-DpL" secondAttribute="leading" constant="5" id="B4O-T0-KDy"/>
+                            <constraint firstItem="dht-mm-Nxa" firstAttribute="top" secondItem="4jd-gq-DpL" secondAttribute="top" constant="5" id="S70-Bm-mgG"/>
+                            <constraint firstItem="pDO-ym-Dtg" firstAttribute="top" secondItem="dht-mm-Nxa" secondAttribute="bottom" constant="5" id="SnJ-vS-3d6"/>
+                            <constraint firstItem="dht-mm-Nxa" firstAttribute="leading" secondItem="4jd-gq-DpL" secondAttribute="leading" constant="6" id="ds7-9K-DTt"/>
+                            <constraint firstAttribute="bottom" secondItem="pDO-ym-Dtg" secondAttribute="bottom" constant="5" id="lo6-vG-94B"/>
+                            <constraint firstAttribute="trailing" secondItem="pDO-ym-Dtg" secondAttribute="trailing" constant="5" id="urA-7d-GZ2"/>
+                            <constraint firstAttribute="trailing" secondItem="dht-mm-Nxa" secondAttribute="trailing" constant="7" id="zbB-T3-uiX"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4jd-gq-DpL" secondAttribute="bottom" constant="5" id="pX2-sk-wuP"/>
+                <constraint firstAttribute="trailing" secondItem="4jd-gq-DpL" secondAttribute="trailing" constant="5" id="teA-6Y-Eyd"/>
+                <constraint firstItem="4jd-gq-DpL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="yfT-fv-NeD"/>
+                <constraint firstItem="4jd-gq-DpL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="yrG-7T-HxT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="177" height="241"/>
+            <connections>
+                <outlet property="categoryIcon" destination="von-4j-fn3" id="5sm-ac-Lwc"/>
+                <outlet property="categoryLbl" destination="pDO-ym-Dtg" id="IMV-ju-lfu"/>
+            </connections>
+            <point key="canvasLocation" x="229.71014492753625" y="196.54017857142856"/>
+        </collectionViewCell>
+    </objects>
+</document>

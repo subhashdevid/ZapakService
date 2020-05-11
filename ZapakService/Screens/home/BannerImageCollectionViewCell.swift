@@ -1,5 +1,5 @@
 //
-//  CategoryCollectionViewCell.swift
+//  BannerImageCollectionViewCell.swift
 //  ZapakService
 //
 //  Created by Vibhash Kumar on 11/05/20.
@@ -8,10 +8,9 @@
 
 import UIKit
 
-class CategoryCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var categoryIcon: UIImageView!
-     @IBOutlet weak var categoryLbl: UILabel!
-    
+class BannerImageCollectionViewCell: UICollectionViewCell {
+
+    @IBOutlet weak var bannerImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

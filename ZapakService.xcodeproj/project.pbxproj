@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B887C78246836A2002C95A1 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B887C77246836A2002C95A1 /* CategoryCollectionViewCell.swift */; };
+		3B7FEEE5246998B000045DAC /* AutoScrollingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FEEE4246998AF00045DAC /* AutoScrollingCollectionView.swift */; };
+		3B7FEEE724699AEA00045DAC /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FEEE624699AEA00045DAC /* BannerCollectionViewCell.swift */; };
+		3B7FEEEE2469A57500045DAC /* BannerImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FEEEC2469A57500045DAC /* BannerImageCollectionViewCell.swift */; };
+		3B7FEEEF2469A57500045DAC /* BannerImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7FEEED2469A57500045DAC /* BannerImageCollectionViewCell.xib */; };
+		3B7FEEF22469A64400045DAC /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FEEF02469A64400045DAC /* CategoryCollectionViewCell.swift */; };
+		3B7FEEF32469A64400045DAC /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7FEEF12469A64400045DAC /* CategoryCollectionViewCell.xib */; };
+		3B7FEEF62469A6F600045DAC /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FEEF42469A6F600045DAC /* CategoryTableViewCell.swift */; };
+		3B7FEEF72469A6F600045DAC /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7FEEF52469A6F600045DAC /* CategoryTableViewCell.xib */; };
 		A801F7A2DE32A11FF538F5AD /* Pods_ZapakService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45D456BC0CE707492D118E2 /* Pods_ZapakService.framework */; };
 		BF16B8FE245DC38D00B9062D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B8FD245DC38D00B9062D /* AppDelegate.swift */; };
 		BF16B902245DC38D00B9062D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16B901245DC38D00B9062D /* LoginViewController.swift */; };
@@ -63,7 +70,14 @@
 
 /* Begin PBXFileReference section */
 		00DDAB41508D69E7588E97B2 /* Pods-ZapakService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZapakService.debug.xcconfig"; path = "Target Support Files/Pods-ZapakService/Pods-ZapakService.debug.xcconfig"; sourceTree = "<group>"; };
-		3B887C77246836A2002C95A1 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B7FEEE4246998AF00045DAC /* AutoScrollingCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoScrollingCollectionView.swift; sourceTree = "<group>"; };
+		3B7FEEE624699AEA00045DAC /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B7FEEEC2469A57500045DAC /* BannerImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B7FEEED2469A57500045DAC /* BannerImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		3B7FEEF02469A64400045DAC /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B7FEEF12469A64400045DAC /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		3B7FEEF42469A6F600045DAC /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		3B7FEEF52469A6F600045DAC /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
 		A45D456BC0CE707492D118E2 /* Pods_ZapakService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZapakService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF16B8FA245DC38D00B9062D /* ZapakService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZapakService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF16B8FD245DC38D00B9062D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +184,7 @@
 		BF16B8FC245DC38D00B9062D /* ZapakService */ = {
 			isa = PBXGroup;
 			children = (
+				3B7FEEE4246998AF00045DAC /* AutoScrollingCollectionView.swift */,
 				BF16B983245DCB7200B9062D /* BaseViewController.swift */,
 				BF16B971245DCB6200B9062D /* Extension */,
 				BF16B96D245DCB6100B9062D /* Model */,
@@ -217,11 +232,17 @@
 		BF16B916245DC94800B9062D /* home */ = {
 			isa = PBXGroup;
 			children = (
+				3B7FEEEC2469A57500045DAC /* BannerImageCollectionViewCell.swift */,
+				3B7FEEED2469A57500045DAC /* BannerImageCollectionViewCell.xib */,
 				BF16B917245DC94800B9062D /* HomeCollectionViewCell.swift */,
 				BF16B918245DC94800B9062D /* HomeServiceController.swift */,
 				BF16B919245DC94800B9062D /* Ac */,
 				BF16B91B245DC94800B9062D /* WashingMachine */,
-				3B887C77246836A2002C95A1 /* CategoryCollectionViewCell.swift */,
+				3B7FEEE624699AEA00045DAC /* BannerCollectionViewCell.swift */,
+				3B7FEEF02469A64400045DAC /* CategoryCollectionViewCell.swift */,
+				3B7FEEF12469A64400045DAC /* CategoryCollectionViewCell.xib */,
+				3B7FEEF42469A6F600045DAC /* CategoryTableViewCell.swift */,
+				3B7FEEF52469A6F600045DAC /* CategoryTableViewCell.xib */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -414,8 +435,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7FEEF32469A64400045DAC /* CategoryCollectionViewCell.xib in Resources */,
+				3B7FEEF72469A6F600045DAC /* CategoryTableViewCell.xib in Resources */,
 				BF16B90A245DC39200B9062D /* LaunchScreen.storyboard in Resources */,
 				BF16B907245DC39200B9062D /* Assets.xcassets in Resources */,
+				3B7FEEEF2469A57500045DAC /* BannerImageCollectionViewCell.xib in Resources */,
 				BF16B905245DC38D00B9062D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,10 +508,12 @@
 				BF16B984245DCB7200B9062D /* BaseViewController.swift in Sources */,
 				BF16B947245DC94900B9062D /* GyserServiceController.swift in Sources */,
 				BF16B944245DC94900B9062D /* WashMRepairVController.swift in Sources */,
+				3B7FEEE5246998B000045DAC /* AutoScrollingCollectionView.swift in Sources */,
 				BF16B95A245DC94900B9062D /* PrivacyPolicyController.swift in Sources */,
-				3B887C78246836A2002C95A1 /* CategoryCollectionViewCell.swift in Sources */,
+				3B7FEEE724699AEA00045DAC /* BannerCollectionViewCell.swift in Sources */,
 				BF16B981245DCB6200B9062D /* UIViewExtension.swift in Sources */,
 				BF16B95B245DC94900B9062D /* CCtvRepaServController.swift in Sources */,
+				3B7FEEEE2469A57500045DAC /* BannerImageCollectionViewCell.swift in Sources */,
 				BF16B97C245DCB6200B9062D /* Model.swift in Sources */,
 				BF16B945245DC94900B9062D /* WashingMachineServiceController.swift in Sources */,
 				BF16B958245DC94900B9062D /* TermConditionsController.swift in Sources */,
@@ -498,7 +524,9 @@
 				BF16B942245DC94900B9062D /* AcRepairViewController.swift in Sources */,
 				BF16B982245DCB6200B9062D /* DPOTPView.swift in Sources */,
 				BF16B97D245DCB6200B9062D /* Validation.swift in Sources */,
+				3B7FEEF22469A64400045DAC /* CategoryCollectionViewCell.swift in Sources */,
 				BF16B8FE245DC38D00B9062D /* AppDelegate.swift in Sources */,
+				3B7FEEF62469A6F600045DAC /* CategoryTableViewCell.swift in Sources */,
 				BF16B957245DC94900B9062D /* AboutServicesController.swift in Sources */,
 				BF16B946245DC94900B9062D /* GyserService&RepairVController.swift in Sources */,
 				BF16B986245DD34500B9062D /* OTPViewController.swift in Sources */,
